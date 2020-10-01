@@ -10,7 +10,7 @@ app.use(express.static(__dirname))
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended: false}))
 
-var dbUrl ="mongodb+srv://user:user@cluster0.vsncv.mongodb.net/Cluster0?retryWrites=true&w=majority"
+var dbUrl ="mongodb+srv://<user>:<password>@cluster0.vsncv.mongodb.net/<database>?retryWrites=true&w=majority"
 
 mongoose.Promise = Promise
 
